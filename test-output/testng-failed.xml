@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite thread-count="2" parallel="methods" name="Failed suite [Parallel_Testing]" guice-stage="DEVELOPMENT">
+  <test thread-count="2" parallel="methods" name="chromeTest(failed)">
+    <parameter name="browser" value="Firefox"/>
+    <classes>
+      <class name="Org.Test.SeleniumOpenBrowser.parallelExecution">
+        <methods>
+          <include name="quitBrowser"/>
+          <include name="preCondition"/>
+          <include name="addToCart"/>
+        </methods>
+      </class> <!-- Org.Test.SeleniumOpenBrowser.parallelExecution -->
+    </classes>
+  </test> <!-- chromeTest(failed) -->
+</suite> <!-- Failed suite [Parallel_Testing] -->
